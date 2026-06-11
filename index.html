@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Polar Net — Auto Shop ERP</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Geist+Mono:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="#" class="logo">
+        <span class="logo-bracket">[</span>
+        POLAR<span class="logo-accent">NET</span>
+        <span class="logo-bracket">]</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#features">FEATURES</a></li>
+        <li><a href="https://app.polar-net.com" class="btn-nav" target="_blank" rel="noopener">ACCESS POLAR NET</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#features" onclick="closeMenu()">FEATURES</a>
+      <a href="https://app.polar-net.com" target="_blank" rel="noopener" onclick="closeMenu()">ACCESS PORTAL</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-grid-overlay"></div>
+    <div class="hero-content">
+      <div class="hero-tag">// SOFTWARE FOR AUTO SPECIALTY SHOPS</div>
+      <h1 class="hero-title">
+        RUN YOUR<br />
+        SHOP AT<br />
+        <span class="accent">FULL SIGNAL.</span>
+      </h1>
+      <p class="hero-sub">
+        End-to-end operations software built for shops that do custom fabrication,
+        car audio, radar &amp; laser defense, and high-end installs.
+        One platform. Zero compromises.
+      </p>
+      <div class="hero-actions">
+        <a href="#features" class="btn-primary">SEE FEATURES</a>
+        <a href="mailto:contact@polar-net.com" class="btn-ghost">JOIN BETA &rarr;</a>
+      </div>
+    </div>
+    <div class="hero-dashboard">
+      <div class="db-chrome">
+
+        <!-- browser chrome bar -->
+        <div class="db-topbar">
+          <div class="db-dots">
+            <span class="db-dot db-dot--red"></span>
+            <span class="db-dot db-dot--yellow"></span>
+            <span class="db-dot db-dot--green"></span>
+          </div>
+          <div class="db-url-bar">app.polar-net.com &nbsp;/&nbsp; dashboard</div>
+        </div>
+
+        <!-- dashboard content -->
+        <div class="db-inner">
+
+          <!-- header -->
+          <div class="db-header">
+            <div>
+              <div class="db-title">Welcome back, Charles!</div>
+              <div class="db-subtitle">Here's what's happening with your shop today.</div>
+            </div>
+            <button class="db-btn-green">&#x2B; Receive Items</button>
+          </div>
+
+          <!-- stat cards + actions pending -->
+          <div class="db-cards-row">
+            <div class="db-stats-2x2">
+
+              <div class="db-stat-card">
+                <div class="db-stat-chip db-chip-blue">&#x1F4C5;</div>
+                <div class="db-stat-lbl">TODAY</div>
+                <div class="db-stat-day">THURSDAY</div>
+                <div class="db-stat-big">16</div>
+                <div class="db-stat-sub">April 2026</div>
+              </div>
+
+              <div class="db-stat-card">
+                <div class="db-stat-chip db-chip-purple">&#x1F4CB;</div>
+                <div class="db-stat-lbl">OPEN QUOTES</div>
+                <div class="db-stat-big">5</div>
+                <div class="db-stat-sub">Draft quotes</div>
+              </div>
+
+              <div class="db-stat-card">
+                <div class="db-stat-chip db-chip-green">&#x23F1;</div>
+                <div class="db-stat-lbl">THIS WEEK</div>
+                <div class="db-stat-big">67.5<span class="db-unit">h</span></div>
+                <div class="db-stat-sub">of 90h capacity</div>
+              </div>
+
+              <div class="db-stat-card">
+                <div class="db-stat-chip db-chip-orange">&#x1F69A;</div>
+                <div class="db-stat-lbl">DROP-OFF</div>
+                <div class="db-stat-big">20</div>
+                <div class="db-stat-sub">Awaiting drop-off</div>
+              </div>
+
+            </div>
+
+            <div class="db-actions">
+              <div class="db-actions-hd">
+                <span>Actions Pending</span>
+                <span class="db-badge-red">1</span>
+              </div>
+              <div class="db-action-row">
+                <div class="db-action-chip">&#x1F6D2;</div>
+                <div>
+                  <div class="db-action-title">ULTIMO-124D-POWERSLIM</div>
+                  <div class="db-action-meta">Morel &middot; John Doe</div>
+                </div>
+                <span class="db-action-qty">&times;2</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- schedule / calendar -->
+          <div class="db-sched">
+            <div class="db-sched-hd">
+              <span class="db-sched-title">Schedule</span>
+              <div class="db-sched-nav">
+                <div class="db-view-btns"><span class="db-view-on">Month</span><span>Week</span></div>
+                <span class="db-nav-arrow">&#8249;</span>
+                <span class="db-nav-month">April 2026</span>
+                <span class="db-nav-arrow">&#8250;</span>
+                <span class="db-nav-today">Today</span>
+              </div>
+            </div>
+            <div class="db-cal-hdr">
+              <span>SUN</span><span>MON</span><span>TUE</span><span>WED</span><span>THU</span><span>FRI</span><span>SAT</span>
+            </div>
+            <!-- week of Apr 1 -->
+            <div class="db-cal-row">
+              <div class="db-cal-cell"></div>
+              <div class="db-cal-cell"></div>
+              <div class="db-cal-cell"></div>
+              <div class="db-cal-cell">
+                <div class="db-dn">1</div>
+                <div class="db-ev db-ev-teal"><span class="db-av db-av-teal">JG</span><span class="db-av db-av-pink">MW</span> 2025 FORD Mustang Ma...</div>
+                <div class="db-ev db-ev-gray">&#x1F4CB; Porsche Drop Off</div>
+              </div>
+              <div class="db-cal-cell">
+                <div class="db-dn">2</div>
+                <div class="db-ev db-ev-teal"><span class="db-av db-av-teal">JG</span><span class="db-av db-av-pink">MW</span> 2025 FORD Mustang Ma...</div>
+                <div class="db-ev db-ev-gray">&#x1F4CB; Potentially Drop off Le...</div>
+              </div>
+              <div class="db-cal-cell">
+                <div class="db-dn">3</div>
+                <div class="db-ev db-ev-teal"><span class="db-av db-av-pink">MW</span><span class="db-av db-av-teal">JG</span> 2025 FORD Mustang Ma...</div>
+                <div class="db-ev db-ev-gray">&#x1F4CB; Personal: Common reason...</div>
+                <div class="db-ev db-ev-gray">&#x1F4CB; Consultation - Systems...</div>
+              </div>
+              <div class="db-cal-cell">
+                <div class="db-dn db-dn-muted">4</div>
+              </div>
+            </div>
+            <!-- week of Apr 5 -->
+            <div class="db-cal-row">
+              <div class="db-cal-cell"><div class="db-dn db-dn-muted">5</div></div>
+              <div class="db-cal-cell">
+                <div class="db-dn">6</div>
+                <div class="db-ev db-ev-orange"></div>
+              </div>
+              <div class="db-cal-cell">
+                <div class="db-dn">7</div>
+                <div class="db-ev db-ev-pink"><span class="db-av db-av-teal">JG</span><span class="db-av db-av-pink">MW</span> 2026 BMW X7</div>
+              </div>
+              <div class="db-cal-cell">
+                <div class="db-dn">8</div>
+                <div class="db-ev db-ev-pink"><span class="db-av db-av-teal">JG</span><span class="db-av db-av-pink">MW</span> 2026 BMW X7</div>
+              </div>
+              <div class="db-cal-cell">
+                <div class="db-dn">9</div>
+                <div class="db-ev db-ev-pink"><span class="db-av db-av-pink">MW</span> 2026 BMW X7</div>
+              </div>
+              <div class="db-cal-cell">
+                <div class="db-dn">10</div>
+                <div class="db-ev db-ev-pink"><span class="db-av db-av-pink">MW</span> 2026 BMW X7</div>
+              </div>
+              <div class="db-cal-cell"><div class="db-dn db-dn-muted">11</div></div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- fade bottom edge -->
+        <div class="db-fade"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section class="section" id="features">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">// 01 — PLATFORM</span>
+        <h2>EVERYTHING YOUR<br /><span class="accent">SHOP NEEDS.</span></h2>
+        <p class="section-sub">One integrated system replaces the pile of spreadsheets, paper notes, and disconnected apps holding your shop back.</p>
+      </div>
+
+      <!-- SCROLL-DRIVEN FEATURE EXPLORER -->
+      <div class="feat-scroll-outer" id="featScrollOuter">
+        <div class="feat-sticky" id="featSticky">
+
+          <!-- MOBILE TAB NAV -->
+          <div class="feat-mobile-tabs" id="featMobileTabs">
+            <button class="fmt-btn" data-idx="0">Customers</button>
+            <button class="fmt-btn" data-idx="1">Quotes</button>
+            <button class="fmt-btn" data-idx="2">Invoices</button>
+            <button class="fmt-btn" data-idx="3">Projects</button>
+            <button class="fmt-btn" data-idx="4">Inventory</button>
+            <button class="fmt-btn" data-idx="5">Purchase Orders</button>
+            <button class="fmt-btn" data-idx="6">Timesheets</button>
+            <button class="fmt-btn" data-idx="7">Inspections</button>
+            <button class="fmt-btn" data-idx="8">Payments</button>
+            <button class="fmt-btn" data-idx="9">Schedule</button>
+            <button class="fmt-btn" data-idx="10">Manager Portal</button>
+          </div>
+
+          <!-- LEFT: APP SIDEBAR -->
+          <aside class="feat-sidebar">
+            <div class="feat-sidebar-hd">
+              <div class="feat-brand-name">Your Shop</div>
+              <div class="feat-brand-sub">Powered by Polar Net</div>
+            </div>
+
+            <nav class="feat-nav" id="featNav">
+              <div class="feat-nav-item feat-nav-ghost">
+                <svg class="feat-nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9,22 9,12 15,12 15,22"/></svg>
+                Dashboard
+              </div>
+              <div class="feat-nav-item" data-idx="0">
+                <svg class="feat-nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                Customers
+              </div>
+              <div class="feat-nav-item" data-idx="1">
+                <svg class="feat-nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 5H7a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-2"/><rect x="9" y="3" width="6" height="4"/><line x1="9" y1="12" x2="15" y2="12"/><line x1="9" y1="16" x2="12" y2="16"/></svg>
+                Quotes
+              </div>
+              <div class="feat-nav-item" data-idx="2">
+                <svg class="feat-nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="3" width="20" height="18"/><line x1="2" y1="9" x2="22" y2="9"/><line x1="8" y1="3" x2="8" y2="9"/></svg>
+                Invoices
+              </div>
+              <div class="feat-nav-item" data-idx="3">
+                <svg class="feat-nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="7" width="20" height="14"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/></svg>
+                Projects
+              </div>
+              <div class="feat-nav-item" data-idx="4">
+                <svg class="feat-nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27,6.96 12,12.01 20.73,6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+                Inventory
+              </div>
+              <div class="feat-nav-item" data-idx="5">
+                <svg class="feat-nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+                Purchase Orders
+              </div>
+              <div class="feat-nav-item" data-idx="6">
+                <svg class="feat-nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><polyline points="12,6 12,12 16,14"/></svg>
+                Timesheets
+              </div>
+              <div class="feat-nav-item" data-idx="7">
+                <svg class="feat-nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 5H7a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-2"/><rect x="9" y="3" width="6" height="4"/><polyline points="9,12 11,14 15,10"/></svg>
+                Inspections
+              </div>
+              <div class="feat-nav-item" data-idx="8">
+                <svg class="feat-nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="1" y="4" width="22" height="16"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
+                Payments
+              </div>
+              <div class="feat-nav-item" data-idx="9">
+                <svg class="feat-nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="4" width="18" height="18" rx="0"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                Schedule
+              </div>
+            </nav>
+
+            <div class="feat-sidebar-bottom">
+              <div class="feat-sidebar-user">
+                <div class="feat-user-name">Jorge G.</div>
+                <div class="feat-user-role">Manager</div>
+              </div>
+              <div class="feat-nav-item feat-nav-item--portal" data-idx="10">
+                <svg class="feat-nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="3"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+                Manager Portal
+              </div>
+              <div class="feat-nav-item feat-nav-ghost">
+                <svg class="feat-nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><polyline points="16,17 21,12 16,7"/><line x1="21" y1="12" x2="9" y2="12"/></svg>
+                Logout
+              </div>
+            </div>
+          </aside>
+
+          <!-- RIGHT: CONTENT PANELS -->
+          <div class="feat-panels" id="featPanels">
+
+            <!-- 0: Customers -->
+            <div class="feat-panel" data-panel="0">
+              <div class="feat-panel-tag">CUSTOMER MANAGEMENT</div>
+              <h3 class="feat-panel-title">Know every customer.<br />Every vehicle. Every job.</h3>
+              <p class="feat-panel-desc">Complete customer profiles with vehicle history, contact info, communication logs, and every invoice on record. One search away.</p>
+              <ul class="feat-panel-list">
+                <li>Full vehicle &amp; service history per customer</li>
+                <li>Contact notes &amp; communication log</li>
+                <li>Merge &amp; deduplicate records in one click</li>
+                <li>Linked quotes, invoices, and appointments</li>
+              </ul>
+              <div class="feat-panel-mock">
+                <div class="fpm-row fpm-row--hd"><span>CUSTOMERS</span><span class="fpm-badge">1,284 records</span></div>
+                <div class="fpm-customer"><div class="fpm-av">JD</div><div><div class="fpm-name">John Doe</div><div class="fpm-meta">2023 BMW M4 &middot; 3 vehicles &middot; Last visit Apr 12</div></div><span class="fpm-tag fpm-tag--green">Active</span></div>
+                <div class="fpm-customer"><div class="fpm-av fpm-av--purple">SR</div><div><div class="fpm-name">Mike West</div><div class="fpm-meta">2025 Porsche 911 &middot; 1 vehicle &middot; Last visit Mar 28</div></div><span class="fpm-tag fpm-tag--blue">VIP</span></div>
+                <div class="fpm-customer"><div class="fpm-av fpm-av--orange">MW</div><div><div class="fpm-name">Marcus Webb</div><div class="fpm-meta">2024 Tesla Model S &middot; 2 vehicles &middot; Last visit Apr 1</div></div><span class="fpm-tag fpm-tag--green">Active</span></div>
+              </div>
+            </div>
+
+            <!-- 1: Quotes -->
+            <div class="feat-panel" data-panel="1">
+              <div class="feat-panel-tag">ESTIMATES &amp; QUOTES</div>
+              <h3 class="feat-panel-title">Quote it fast.<br />Win the job.</h3>
+              <p class="feat-panel-desc">Build itemized estimates with labor and parts, send professional quotes to customers, and convert to invoices in one click.</p>
+              <ul class="feat-panel-list">
+                <li>Itemized labor &amp; parts line items</li>
+                <li>Send PDF quotes via email</li>
+                <li>One-click conversion to invoice</li>
+                <li>Deposit request on quote acceptance</li>
+              </ul>
+              <div class="feat-panel-mock">
+                <div class="fpm-row fpm-row--hd"><span>QUOTE #Q-2841</span><span class="fpm-badge fpm-badge--yellow">Draft</span></div>
+                <div class="fpm-line-item"><span>Alpine F1 Status 3-Way Speaker System</span><span>$1,299</span></div>
+                <div class="fpm-line-item"><span>Installation Labor — 4h</span><span>$320</span></div>
+                <div class="fpm-line-item"><span>Sound Deadening Mat (full door)</span><span>$180</span></div>
+                <div class="fpm-divider"></div>
+                <div class="fpm-line-item fpm-total"><span>TOTAL</span><span>$1,799</span></div>
+              </div>
+            </div>
+
+            <!-- 2: Invoices -->
+            <div class="feat-panel" data-panel="2">
+              <div class="feat-panel-tag">INVOICING</div>
+              <h3 class="feat-panel-title">Invoice fast.<br />Get paid faster.</h3>
+              <p class="feat-panel-desc">Track deposits and balances, send payment links, and keep a full ledger per customer. Stripe-powered payments built in.</p>
+              <ul class="feat-panel-list">
+                <li>Deposit &amp; balance payment tracking</li>
+                <li>Stripe card, ACH, and link payments</li>
+                <li>Automatic payment receipts</li>
+                <li>QuickBooks export ready</li>
+              </ul>
+              <div class="feat-panel-mock">
+                <div class="fpm-row fpm-row--hd"><span>INVOICE #INV-5512</span><span class="fpm-badge fpm-badge--orange">Balance Due</span></div>
+                <div class="fpm-invoice-row"><span class="fpm-inv-label">Total</span><span class="fpm-inv-val">$2,450.00</span></div>
+                <div class="fpm-invoice-row"><span class="fpm-inv-label">Deposit Paid</span><span class="fpm-inv-val fpm-green">&minus; $500.00</span></div>
+                <div class="fpm-divider"></div>
+                <div class="fpm-invoice-row fpm-invoice-row--total"><span class="fpm-inv-label">Balance Due</span><span class="fpm-inv-val">$1,950.00</span></div>
+                <button class="fpm-pay-btn">Send Payment Link &rarr;</button>
+              </div>
+            </div>
+
+            <!-- 3: Projects -->
+            <div class="feat-panel" data-panel="3">
+              <div class="feat-panel-tag">PROJECT MANAGEMENT</div>
+              <h3 class="feat-panel-title">Every job.<br />Every bay. On time.</h3>
+              <p class="feat-panel-desc">Manage every job from intake to completion. Track status, assign techs, attach photos and notes, and keep your team aligned.</p>
+              <ul class="feat-panel-list">
+                <li>Job status pipeline &amp; bay tracking</li>
+                <li>Photo &amp; note attachments per project</li>
+                <li>Tech assignment &amp; workload balancing</li>
+                <li>Customer approval workflows</li>
+              </ul>
+              <div class="feat-panel-mock">
+                <div class="fpm-row fpm-row--hd"><span>PROJECTS</span><span>Bay View</span></div>
+                <div class="fpm-project"><div class="fpm-proj-dot fpm-dot--green"></div><div><div class="fpm-name">2026 BMW X7 — Full Audio</div><div class="fpm-meta">Bay 2 &middot; JG + MW &middot; Est. done Apr 18</div></div><span class="fpm-tag fpm-tag--green">In Progress</span></div>
+                <div class="fpm-project"><div class="fpm-proj-dot fpm-dot--yellow"></div><div><div class="fpm-name">2024 Porsche 911 — Radar</div><div class="fpm-meta">Bay 1 &middot; JG &middot; Est. done Apr 17</div></div><span class="fpm-tag fpm-tag--yellow">Awaiting Parts</span></div>
+                <div class="fpm-project"><div class="fpm-proj-dot fpm-dot--blue"></div><div><div class="fpm-name">2023 Tesla Model S — Tint</div><div class="fpm-meta">Bay 3 &middot; MW &middot; Est. done Apr 16</div></div><span class="fpm-tag fpm-tag--blue">Ready for Pickup</span></div>
+              </div>
+            </div>
+
+            <!-- 4: Inventory -->
+            <div class="feat-panel" data-panel="4">
+              <div class="feat-panel-tag">INVENTORY MANAGEMENT</div>
+              <h3 class="feat-panel-title">Every part accounted for.<br />From day one.</h3>
+              <p class="feat-panel-desc">Pre-loaded global parts catalog means you start with real data on day one. Supports UPC scanning and custom SKUs for house items.</p>
+              <ul class="feat-panel-list">
+                <li>Pre-populated global parts catalog</li>
+                <li>UPC scanning &amp; custom SKU support</li>
+                <li>Low-stock alerts &amp; reorder management</li>
+                <li>Cost tracking tied to projects</li>
+              </ul>
+              <div class="feat-panel-mock">
+                <div class="fpm-row fpm-row--hd"><span>INVENTORY</span><span class="fpm-badge fpm-badge--red">3 Low Stock</span></div>
+                <div class="fpm-inv-item"><span class="fpm-inv-name">Morel ULTIMO-124D-POWERSLIM</span><span class="fpm-inv-stock fpm-red">2 left</span></div>
+                <div class="fpm-inv-item"><span class="fpm-inv-name">Alpine F1 Status 3-Way</span><span class="fpm-inv-stock">12 in stock</span></div>
+                <div class="fpm-inv-item"><span class="fpm-inv-name">Dynamat Xtreme Sheet</span><span class="fpm-inv-stock fpm-yellow">4 left</span></div>
+                <div class="fpm-inv-item"><span class="fpm-inv-name">Escort MAX 360c MKII</span><span class="fpm-inv-stock">8 in stock</span></div>
+              </div>
+            </div>
+
+            <!-- 5: Purchase Orders -->
+            <div class="feat-panel" data-panel="5">
+              <div class="feat-panel-tag">PURCHASE ORDERS</div>
+              <h3 class="feat-panel-title">Order smart.<br />Restock automatically.</h3>
+              <p class="feat-panel-desc">Create purchase orders directly from low-stock alerts or project material needs. Receive items back into inventory automatically.</p>
+              <ul class="feat-panel-list">
+                <li>Generate POs from low-stock alerts</li>
+                <li>Linked to projects &amp; cost tracking</li>
+                <li>Auto-receive items into inventory</li>
+                <li>Full vendor cost &amp; margin tracking</li>
+              </ul>
+              <div class="feat-panel-mock">
+                <div class="fpm-row fpm-row--hd"><span>PO #PO-0441</span><span class="fpm-badge fpm-badge--blue">Ordered</span></div>
+                <div class="fpm-line-item"><span>Morel ULTIMO-124D (&times;4)</span><span>$1,200</span></div>
+                <div class="fpm-line-item"><span>Dynamat Xtreme Sheet (&times;10)</span><span>$340</span></div>
+                <div class="fpm-divider"></div>
+                <div class="fpm-line-item fpm-total"><span>AudioDistribution LLC</span><span>$1,540</span></div>
+              </div>
+            </div>
+
+            <!-- 6: Timesheets -->
+            <div class="feat-panel" data-panel="6">
+              <div class="feat-panel-tag">LABOR TIMESHEETS</div>
+              <h3 class="feat-panel-title">Track every hour.<br />Pay with precision.</h3>
+              <p class="feat-panel-desc">Clock in and out by job or shift. Per-job labor allocation shows exactly where hours go — and exports clean data for payroll.</p>
+              <ul class="feat-panel-list">
+                <li>Job-level clock in / clock out</li>
+                <li>Per-tech timesheet reports</li>
+                <li>Overtime &amp; break tracking</li>
+                <li>Payroll export (CSV / QuickBooks)</li>
+              </ul>
+              <div class="feat-panel-mock">
+                <div class="fpm-row fpm-row--hd"><span>TIMESHEETS — Week of Apr 14</span></div>
+                <div class="fpm-ts-row"><span class="fpm-av fpm-av--teal">JG</span><div><div class="fpm-name">Jorge Garcia</div><div class="fpm-meta">32.5h this week &middot; 4 jobs</div></div><span class="fpm-ts-hrs">32.5h</span></div>
+                <div class="fpm-ts-row"><span class="fpm-av fpm-av--purple">MW</span><div><div class="fpm-name">Marcus Webb</div><div class="fpm-meta">35.0h this week &middot; 3 jobs</div></div><span class="fpm-ts-hrs">35.0h</span></div>
+                <div class="fpm-ts-row"><span class="fpm-av fpm-av--orange">AL</span><div><div class="fpm-name">Alex Lin</div><div class="fpm-meta">28.0h this week &middot; 5 jobs</div></div><span class="fpm-ts-hrs">28.0h</span></div>
+              </div>
+            </div>
+
+            <!-- 7: Inspections -->
+            <div class="feat-panel" data-panel="7">
+              <div class="feat-panel-tag">VEHICLE INSPECTIONS</div>
+              <h3 class="feat-panel-title">Document everything.<br />Protect your shop.</h3>
+              <p class="feat-panel-desc">Digital inspection forms with condition ratings, annotated photos, and customer-ready reports. Build templates for any service type.</p>
+              <ul class="feat-panel-list">
+                <li>Customizable inspection checklists</li>
+                <li>Photo annotation &amp; condition marking</li>
+                <li>Customer-facing inspection reports</li>
+                <li>Pre- and post-install documentation</li>
+              </ul>
+              <div class="feat-panel-mock">
+                <div class="fpm-row fpm-row--hd"><span>INSPECTION #INS-0882</span><span class="fpm-badge fpm-badge--green">Complete</span></div>
+                <div class="fpm-check-row"><span class="fpm-chk fpm-chk--ok">&#x2713;</span><span>Exterior condition documented</span></div>
+                <div class="fpm-check-row"><span class="fpm-chk fpm-chk--ok">&#x2713;</span><span>Interior pre-install photos</span></div>
+                <div class="fpm-check-row"><span class="fpm-chk fpm-chk--ok">&#x2713;</span><span>Existing audio system noted</span></div>
+                <div class="fpm-check-row"><span class="fpm-chk fpm-chk--warn">!</span><span>Minor scuff on rear bumper — noted</span></div>
+              </div>
+            </div>
+
+            <!-- 8: Payments -->
+            <div class="feat-panel" data-panel="8">
+              <div class="feat-panel-tag">PAYMENTS</div>
+              <h3 class="feat-panel-title">Cards. ACH. Links.<br />All in one place.</h3>
+              <p class="feat-panel-desc">Accept deposits, full payments, and tips via Stripe. Send pay-by-link from any invoice. No separate merchant account needed.</p>
+              <ul class="feat-panel-list">
+                <li>Stripe card &amp; ACH payments</li>
+                <li>Pay-by-link from any invoice</li>
+                <li>Automatic receipts &amp; reconciliation</li>
+                <li>Tip prompts on customer-facing links</li>
+              </ul>
+              <div class="feat-panel-mock">
+                <div class="fpm-row fpm-row--hd"><span>RECENT PAYMENTS</span><span class="fpm-badge fpm-badge--green">$14,820 this week</span></div>
+                <div class="fpm-payment"><span class="fpm-pay-icon">&#x1F4B3;</span><div><div class="fpm-name">John Doe — INV-5512</div><div class="fpm-meta">Visa &middot;&middot;&middot;4242 &middot; Apr 15, 2:14pm</div></div><span class="fpm-pay-amt fpm-green">+$1,950</span></div>
+                <div class="fpm-payment"><span class="fpm-pay-icon">&#x1F517;</span><div><div class="fpm-name">Sarah Rivera — INV-5490</div><div class="fpm-meta">Pay-by-link &middot; Apr 14, 11:08am</div></div><span class="fpm-pay-amt fpm-green">+$3,200</span></div>
+                <div class="fpm-payment"><span class="fpm-pay-icon">&#x1F3E6;</span><div><div class="fpm-name">Marcus Webb — INV-5477</div><div class="fpm-meta">ACH &middot; Apr 13, 9:30am</div></div><span class="fpm-pay-amt fpm-green">+$850</span></div>
+              </div>
+            </div>
+
+            <!-- 9: Schedule -->
+            <div class="feat-panel" data-panel="9">
+              <div class="feat-panel-tag">SCHEDULING &amp; APPOINTMENTS</div>
+              <h3 class="feat-panel-title">Fill your bays.<br />Run on schedule.</h3>
+              <p class="feat-panel-desc">Manage consultations, drop-offs, and pick-ups in one calendar — with two-way Google Calendar sync so your shop schedule stays in perfect step with the tools your team already uses.</p>
+              <ul class="feat-panel-list">
+                <li>Consultation, drop-off &amp; pick-up appointment types</li>
+                <li>Two-way Google Calendar integration</li>
+                <li>Automated email reminders</li>
+                <li>Bay assignment with conflict detection</li>
+              </ul>
+              <div class="feat-panel-mock fpm-cal-wrap">
+                <div class="fpm-row fpm-row--hd">
+                  <span>APRIL 2026</span>
+                  <span class="fpm-gcal-badge">
+                    <svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" style="display:inline;vertical-align:middle;margin-right:3px"><rect x="3" y="4" width="18" height="17"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="16" y1="2" x2="16" y2="6"/></svg>
+                    Google Calendar
+                  </span>
+                </div>
+                <div class="fpm-cal-hdr"><span>M</span><span>T</span><span>W</span><span>T</span><span>F</span><span>S</span><span>S</span></div>
+                <div class="fpm-cal-row">
+                  <span class="fpm-cd fpm-cd--dim">31</span><span class="fpm-cd">1</span><span class="fpm-cd fpm-cd--ev fpm-cd--teal">2</span><span class="fpm-cd">3</span><span class="fpm-cd fpm-cd--ev fpm-cd--pink">4</span><span class="fpm-cd fpm-cd--dim">5</span><span class="fpm-cd fpm-cd--dim">6</span>
+                </div>
+                <div class="fpm-cal-row">
+                  <span class="fpm-cd">7</span><span class="fpm-cd fpm-cd--ev fpm-cd--teal">8</span><span class="fpm-cd fpm-cd--ev fpm-cd--teal">9</span><span class="fpm-cd fpm-cd--ev fpm-cd--pink">10</span><span class="fpm-cd">11</span><span class="fpm-cd fpm-cd--dim">12</span><span class="fpm-cd fpm-cd--dim">13</span>
+                </div>
+                <div class="fpm-cal-row">
+                  <span class="fpm-cd">14</span><span class="fpm-cd">15</span><span class="fpm-cd">16</span><span class="fpm-cd fpm-cd--today">17</span><span class="fpm-cd fpm-cd--ev fpm-cd--teal">18</span><span class="fpm-cd fpm-cd--dim">19</span><span class="fpm-cd fpm-cd--dim">20</span>
+                </div>
+                <div class="fpm-cal-row">
+                  <span class="fpm-cd fpm-cd--ev fpm-cd--orange">21</span><span class="fpm-cd">22</span><span class="fpm-cd fpm-cd--ev fpm-cd--pink">23</span><span class="fpm-cd">24</span><span class="fpm-cd">25</span><span class="fpm-cd fpm-cd--dim">26</span><span class="fpm-cd fpm-cd--dim">27</span>
+                </div>
+                <div class="fpm-agenda-hd">TODAY — APR 17</div>
+                <div class="fpm-agenda-row fpm-agenda--blue"><span class="fpm-agenda-time">9:00</span><span class="fpm-agenda-label">Consultation — John Doe / BMW X5</span></div>
+                <div class="fpm-agenda-row fpm-agenda--green"><span class="fpm-agenda-time">11:30</span><span class="fpm-agenda-label">Drop-Off — Sarah Rivera / Porsche 911</span></div>
+                <div class="fpm-agenda-row fpm-agenda--yellow"><span class="fpm-agenda-time">14:00</span><span class="fpm-agenda-label">Pick-Up — Marcus Webb / Tesla S</span></div>
+              </div>
+            </div>
+
+            <!-- 10: Manager Portal -->
+            <div class="feat-panel" data-panel="10">
+              <div class="feat-panel-tag">MANAGER PORTAL</div>
+              <h3 class="feat-panel-title">Full control.<br />Real-time visibility.</h3>
+              <p class="feat-panel-desc">The manager layer sits on top of your entire operation. Staff permissions, shop-wide reporting, and payroll exports — all in one place.</p>
+              <ul class="feat-panel-list">
+                <li>Role-based staff permissions</li>
+                <li>Shop-wide revenue &amp; margin reports</li>
+                <li>Payroll &amp; timesheet exports</li>
+                <li>Audit log for every action</li>
+              </ul>
+              <div class="feat-panel-mock">
+                <div class="fpm-row fpm-row--hd"><span>MANAGER OVERVIEW</span><span class="fpm-badge fpm-badge--purple">This Month</span></div>
+                <div class="fpm-mgr-stat"><span class="fpm-mgr-label">REVENUE</span><span class="fpm-mgr-val">$62,400</span></div>
+                <div class="fpm-mgr-stat"><span class="fpm-mgr-label">LABOR COST</span><span class="fpm-mgr-val">$18,700</span></div>
+                <div class="fpm-mgr-stat"><span class="fpm-mgr-label">GROSS MARGIN</span><span class="fpm-mgr-val fpm-green">54.2%</span></div>
+                <div class="fpm-mgr-stat"><span class="fpm-mgr-label">JOBS COMPLETED</span><span class="fpm-mgr-val">48</span></div>
+              </div>
+            </div>
+
+          </div><!-- /feat-panels -->
+        </div><!-- /feat-sticky -->
+      </div><!-- /feat-scroll-outer -->
+    </div>
+  </section>
+
+  <!-- CTA BAND -->
+  <section class="cta-band">
+    <div class="container">
+      <div class="cta-inner">
+        <div>
+          <h2>CURRENTLY IN<br /><span class="accent">CLOSED BETA</span></h2>
+          <p>Polar Net is currently in active development and only accepting closed beta testers. Get in touch to see if your shop qualifies.</p>
+        </div>
+        <div class="cta-actions">
+          <a href="mailto:contact@polar-net.com" class="btn-ghost">TALK TO SALES</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-brand">
+        <span class="logo">[POLARNET]</span>
+        <p>ERP software purpose-built for<br />specialty auto shops.</p>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 Polar Net, Inc. All rights reserved.</span>
+        <span class="footer-build">BUILD 2026.04</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

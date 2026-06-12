@@ -2006,7 +2006,7 @@ ul { list-style: none; }
     padding-bottom: 60px;
   }
 
-  .hero-terminal, .hero-dashboard { max-width: 560px; }
+  .hero-terminal, .hero-dashboard { max-width: 560px; width: 100%; }
 
   .features-grid { grid-template-columns: repeat(2, 1fr); }
 
@@ -2018,7 +2018,20 @@ ul { list-style: none; }
   .nav-links { display: none; }
   .hamburger { display: flex; }
 
-  .hero-title { font-size: clamp(36px, 10vw, 52px); }
+  .hero {
+    grid-template-columns: 1fr;
+    padding: calc(var(--nav-h) + 48px) 20px 60px;
+    overflow: visible;
+  }
+
+  .hero-dashboard { display: none; }
+
+  .hero-title { font-size: clamp(32px, 9vw, 48px); }
+
+  .hero-sub { font-size: 16px; max-width: 100%; }
+
+  .hero-actions { flex-direction: column; }
+  .hero-actions a { text-align: center; }
 
   .features-grid { grid-template-columns: 1fr; }
 

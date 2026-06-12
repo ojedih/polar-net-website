@@ -21,6 +21,7 @@
       </a>
       <ul class="nav-links">
         <li><a href="#features">FEATURES</a></li>
+        <li><a href="#gravity">GRAVITY</a></li>
         <li><a href="https://app.polar-net.com" class="btn-nav" target="_blank" rel="noopener">ACCESS POLAR NET</a></li>
       </ul>
       <button class="hamburger" id="hamburger" aria-label="Open menu">
@@ -29,6 +30,7 @@
     </div>
     <div class="mobile-menu" id="mobileMenu">
       <a href="#features" onclick="closeMenu()">FEATURES</a>
+      <a href="#gravity" onclick="closeMenu()">GRAVITY</a>
       <a href="https://app.polar-net.com" target="_blank" rel="noopener" onclick="closeMenu()">ACCESS PORTAL</a>
     </div>
   </nav>
@@ -545,6 +547,76 @@
           </div><!-- /feat-panels -->
         </div><!-- /feat-sticky -->
       </div><!-- /feat-scroll-outer -->
+    </div>
+  </section>
+
+  <!-- GRAVITY -->
+  <section class="section gravity-section" id="gravity">
+    <div class="container">
+      <div class="gravity-inner">
+
+        <!-- LEFT: COPY -->
+        <div class="gravity-copy">
+          <span class="section-tag">// 02 — INTELLIGENCE</span>
+          <h2>QUOTE IN SECONDS.<br /><span class="accent">PRICE WITH CERTAINTY.</span></h2>
+          <p class="section-sub">Gravity is Polar Net's built-in ML engine that predicts labor hours for any job — before a single wrench turns. Feed it the vehicle, the work order, and the parts. It does the math.</p>
+
+          <ul class="feat-panel-list gravity-list">
+            <li>Trained on your shop's real timesheet data</li>
+            <li>Accounts for vehicle difficulty, age &amp; body type</li>
+            <li>Adjusts estimates per technician's performance history</li>
+            <li>Updates automatically as your data grows</li>
+            <li>One-click insert into any open quote</li>
+          </ul>
+
+          <div class="gravity-powered">
+            <span class="gravity-model-tag">MODEL</span>
+            <span class="gravity-model-name">GRAVITY v0.5</span>
+          </div>
+        </div>
+
+        <!-- RIGHT: MOCK WIDGET -->
+        <div class="gravity-widget">
+          <div class="gw-header">
+            <span class="gw-title">GRAVITY ESTIMATOR</span>
+            <span class="gw-badge">BETA</span>
+          </div>
+
+          <div class="gw-body">
+            <div class="gw-field">
+              <div class="gw-label">VEHICLE</div>
+              <div class="gw-value">2026 BMW X7 &mdash; SUV &middot; Luxury &middot; 0 yr</div>
+            </div>
+            <div class="gw-field">
+              <div class="gw-label">WORK ORDER</div>
+              <div class="gw-value">Head unit replacement<br />Backup camera installation</div>
+            </div>
+            <div class="gw-field">
+              <div class="gw-label">PARTS</div>
+              <div class="gw-value">Alpine F1 Status 3-Way &middot; Dynamat Xtreme (&times;4)</div>
+            </div>
+            <div class="gw-field">
+              <div class="gw-label">TECHNICIAN</div>
+              <div class="gw-value">Marcus T. &mdash; <span class="gw-green">Top performer</span></div>
+            </div>
+
+            <div class="gw-divider"></div>
+
+            <div class="gw-result">
+              <div class="gw-result-label">ESTIMATED LABOR</div>
+              <div class="gw-result-value">4.75<span class="gw-unit">h</span></div>
+              <div class="gw-confidence">
+                <div class="gw-conf-label">Confidence</div>
+                <div class="gw-conf-bar"><div class="gw-conf-fill" style="width:87%"></div></div>
+                <div class="gw-conf-pct">87%</div>
+              </div>
+            </div>
+
+            <button class="gw-cta">INSERT INTO QUOTE &rarr;</button>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 
